@@ -1,11 +1,16 @@
 Package: TreeHotspots
-Title: What the Package Does (one line, title case)
+Title: Hotspot Detection using Classification Trees
 Version: 0.0.0.9000
-Authors@R: person("First", "Last", email = "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
+Authors@R: c(
+    person("Markus", "Loecher", , "markus@codeandmath.com", c("aut", "cre")),
+    person("Philippe", "Verspeelt", , "phiver4@gmail.com", "aut"))
+Description: Extracts leaves from trees that are candidates for hotspots.
 Depends:
     R (>= 3.3.0)
-License: What license is it under?
+License: GPL-3
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 5.0.1
+Suggests: testthat
+URL: https://github.com/pverspeelt/TreeHotspots
+BugReports: https://github.com/pverspeelt/TreeHotspots/issues
