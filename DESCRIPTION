@@ -14,3 +14,6 @@ RoxygenNote: 5.0.1
 Suggests: testthat
 URL: https://github.com/pverspeelt/TreeHotspots
 BugReports: https://github.com/pverspeelt/TreeHotspots/issues
+Imports: rpart,
+    tree,
+    partykit
