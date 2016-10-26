@@ -8,7 +8,7 @@
 #' columns 5-6 (yy1,yy2) contain the (x,y) coords of the center of the rectangle
 #' area gives the rectangular area computed by $ScaleAREA * delta X * delta Y$
 #' yval for factors: maximum class probability, for regression: conditional average of response inside rectangle
-#' lab label used by \link{PlotPartition}
+#' lab label used by \link{plot_partition}
 #' maxClass for factors only: majority class label inside rectangle
 #'
 #' @param TreeFit An object of class "tree"
@@ -24,7 +24,7 @@
 #' @export
 #'
 #' @examples
-#' examples to come
+#' # examples to come
 tree_partition <- function (TreeFit, 
                             label = "yval", 
                             add = FALSE, 

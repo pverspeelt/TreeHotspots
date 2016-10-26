@@ -18,7 +18,7 @@
 #' @export
 #'
 #' @examples 
-#' example to come
+#' # example to come
 find_hotspots <- function(formula = violent ~ X + Y,
                           rotX,
                           NullClass = "0",

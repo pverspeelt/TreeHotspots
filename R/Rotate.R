@@ -8,7 +8,7 @@
 #' @export
 #'
 #' @examples
-#' example to come
+#' # example to come
 rotate <- function (x, angle = 45, center = colMeans(x), inverse = FALSE) {
   # another possible choice would be colMeans(x[,c("X","Y")]) 
   # or colMeans(x[, c("latitude", "longitude")])

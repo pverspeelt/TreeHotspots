@@ -6,8 +6,8 @@
 \usage{
 find_hotspots(formula = violent ~ X + Y, rotX, NullClass = "0",
   minsize = 200, minArea = 20, maxArea = 250, ORfilter = list(OR <-
-  TRUE, OR1 <- 1.8, OR2 <- 0.1), TreeAlgorithm = c("rpart", "ctree")[1],
-  verbose = 1, ...)
+  TRUE, OR1 <- 1.8, OR2 <- 0.1), TreeAlgorithm = c("rpart", "ctree",
+  "tree")[1], verbose = 1, ...)
 }
 \arguments{
 \item{formula}{A formula expression. The left-hand-side (response) should be either a numerical vector when a regression tree will be fitted or a factor, when a classification tree is produced. The right-hand-side should be a series of numeric or factor variables separated by +; there should be no interaction terms. Both . and - are allowed: regression trees can have offset terms.}
@@ -20,7 +20,7 @@ find_hotspots(formula = violent ~ X + Y, rotX, NullClass = "0",
 
 \item{minArea}{minimum area of a cluster, units: lat*lon}
 
-\item{maxArea}{aximum area of a cluster, units: lat*lon}
+\item{maxArea}{maximum area of a cluster, units: lat*lon}
 
 \item{ORfilter}{filter on minimum and maximum odds ratios (OR)}
 
@@ -37,6 +37,6 @@ identified clusters (if any)
 Here we consider one fixed rotation of the data and seek hot spots using a classification tree
 }
 \examples{
-example to come
+# example to come
 }
 

@@ -19,6 +19,6 @@ rotate(x, angle = 45, center = colMeans(x), inverse = FALSE)
 rotate data by multiplying with a rotation matrix.
 }
 \examples{
-example to come
+# example to come
 }
 
