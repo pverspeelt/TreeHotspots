@@ -24,7 +24,11 @@ None
 Plot the partitions of a tree involving one or two variables.
 }
 \examples{
-
-plot_partition()
+\dontrun{
+data(columbus, package="RgoogleMaps", envir = environment())
+crimeTree <- tree(CRIME ~ X+Y, columbus)
+xy=tree_partition(crimeTree,verbose=0)
+plot_partition(xy,lab=TRUE)
+}
 }
 

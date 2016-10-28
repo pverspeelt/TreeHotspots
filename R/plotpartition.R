@@ -12,8 +12,12 @@
 #' @export
 #'
 #' @examples
-#' 
-#' plot_partition()
+#' \dontrun{
+#' data(columbus, package="RgoogleMaps", envir = environment())
+#' crimeTree <- tree(CRIME ~ X+Y, columbus)
+#' xy=tree_partition(crimeTree,verbose=0)
+#' plot_partition(xy,lab=TRUE)
+#' }
 plot_partition <- function(xy, add = FALSE, col = NULL, lab = NULL, ...) {
   if (!add) {
     rx = as.numeric(xy[1, c("xleft", "xright")])
