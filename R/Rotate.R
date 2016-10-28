@@ -53,7 +53,7 @@ test_rotation <- function(x, angles = c(0, 30, 45, 60), center = c(0, 0), OVERLA
     lines(rotX[c(5:8, 5), "X"], rotX[c(5:8, 5), "Y"], col=2)
 
     #rotate them back:
-    rotX2 <- rotate(rotX, a, center, inverseRot = TRUE)
+    rotX2 <- rotate(rotX, a, center, inverse = TRUE)
     cat("angle ", a, ", mse:", round(mean((rotX2[, c("X","Y")] - x[, c("X", "Y")])^2), 3), "\n")
     plot(Y ~ X, data = rotX2, pch = 20, col = rgb(0, 0, 1, 0.5), cex = 0.75, main = paste("reverting angle ", a))
   }
